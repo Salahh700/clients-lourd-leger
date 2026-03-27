@@ -1,0 +1,76 @@
+/* ========================================
+   PAGE ACCUEIL PROPRIETAIRE
+======================================== */
+.page-content {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* ========================================
+   TABLE RÉSERVATIONS
+======================================== */
+.tab-last-reservation {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tab-last-reservation h4 {
+    font-size: 1.25rem;
+    color: var(--deep-ice);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--light-ice);
+}
+
+.tab-last-reservation table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tab-last-reservation thead {
+    background-color: var(--light-ice);
+}
+
+.tab-last-reservation th {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--deep-ice);
+    border-bottom: 2px solid var(--ice-shadow);
+}
+
+.tab-last-reservation td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+    vertical-align: middle;
+}
+
+.tab-last-reservation tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.tab-last-reservation tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--medium-gray);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        padding: 0 1rem;
+    }
+
+    .tab-last-reservation {
+        overflow-x: auto;
+    }
+}

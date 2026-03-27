@@ -1,0 +1,87 @@
+/* Style moderne pour la barre de navigation */
+.nav_bar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+ 
+.nav_bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.nav_bar li {
+    margin-right: 2rem;
+}
+ 
+.nav_bar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+ 
+.nav_bar a:hover {
+    color: #007bff;
+}
+ 
+/* Style pour la partie droite de la navigation */
+.nav_right {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+ 
+/* Style pour les boutons */
+.nav_right button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+ 
+.nav_right button a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+ 
+/* Bouton S'inscrire */
+.nav_right li:first-child button a {
+    background-color: #007bff;
+    color: white;
+}
+ 
+.nav_right li:first-child button a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+ 
+/* Bouton Se Connecter */
+.nav_right li:last-child button a {
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+ 
+.nav_right li:last-child button a:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+}
+ 
+/* Ajustement du contenu principal pour la barre de navigation fixe */
+body {
+    margin-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
